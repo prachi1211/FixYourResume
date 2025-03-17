@@ -1,0 +1,81 @@
+/* Suggestions.css */
+
+/* Container for the suggestions */
+.suggestions-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Title Styling */
+.suggestions-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Styling for the empty state (no suggestions) */
+.no-suggestions-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #aaa;
+}
+
+/* List styling for the suggestions */
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual suggestion item styling */
+.suggestion-item {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.suggestion-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Suggestion message content */
+.suggestion-message {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Suggestion type */
+.suggestion-type {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .suggestions-container {
+    padding: 15px;
+  }
+
+  .suggestions-title {
+    font-size: 1.5rem;
+  }
+
+  .suggestion-item {
+    padding: 12px;
+  }
+}

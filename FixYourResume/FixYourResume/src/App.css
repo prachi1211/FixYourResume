@@ -1,0 +1,94 @@
+/* App.css */
+
+/* Global Styles */
+
+/* App Container */
+.App {
+  max-width: 1000px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Button Styling */
+.analyze-button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.analyze-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.analyze-button:hover:not(:disabled) {
+  background-color: #005bb5;
+}
+
+/* Container for resume and job inputs */
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Section Styling */
+.section {
+  flex: 1;
+  background-color: #f9f9f9;
+  /* padding: 15px; */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Debug Section Styling */
+.debug-section {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+.debug-section h2 {
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.debug-section p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .analyze-button {
+    width: 100%;
+  }
+}

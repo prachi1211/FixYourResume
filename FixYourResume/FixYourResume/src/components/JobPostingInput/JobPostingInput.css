@@ -1,0 +1,66 @@
+/* JobPostingInput.css */
+
+/* Main container for the job posting input */
+.job-post-input {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 20px; */
+}
+
+/* Title styling */
+.input-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.job-desc-textarea {
+  width: 100%;
+  /* padding: 12px; */
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.job-desc-textarea:focus {
+  border-color: #0066cc;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Button styling */
+.analyze-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.analyze-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.analyze-button:hover:not(:disabled) {
+  background-color: #005bb5;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
